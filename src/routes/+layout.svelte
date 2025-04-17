@@ -82,17 +82,11 @@
 <header class="navbar">
   <div class="navbar-container">
     <div class="navbar-section-logo">
-      <a class="title" href="/">comma</a>
+      <a class="title" href="/">catchcam</a>
       <div class="menu-container">
         <HeaderMenu />
       </div>
     </div>
-    <nav class="navbar-section-links">
-      <a href="/openpilot">openpilot</a>
-      <a href="/shop/comma-3x">comma 3X</a>
-      <a href="/vehicles">compatibility</a>
-      <a href="https://comma.ai/jobs">jobs</a>
-    </nav>
     <div class="navbar-section-buttons">
       <a class="button shop" href="/shop">
         {@html BasketIcon}
@@ -174,7 +168,7 @@
     flex-direction: row-reverse;
     align-items: center;
     display: flex;
-    border-right: 1px solid #000;
+    flex: 1;
 
     & > .title {
       font-family: "Monument Extended Black", sans-serif;
@@ -183,45 +177,14 @@
       height: 20px;
       text-transform: uppercase;
       padding: 0 2rem;
-    }
-
-    @media only screen and (max-width: 1280px) {
-      border-right: none;
-    }
-
-    @media only screen and (max-width: 768px) {
+      display: flex;
       flex: 1;
-
-      & > .title {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-      }
+      justify-content: center;
     }
 
     @media only screen and (max-width: 375px) {
       & > .title {
         padding: 0 0.25rem;
-      }
-    }
-  }
-
-  .navbar-section-links {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-
-    & a {
-      color: #000;
-      margin: 0 1.75rem;
-      font-family: Inter, sans-serif;
-      font-size: 1.125rem;
-    }
-
-    @media only screen and (max-width: 1280px) {
-      & {
-        display: none;
       }
     }
   }
