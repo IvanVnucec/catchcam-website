@@ -13,7 +13,6 @@
   import Badge from "$lib/components/Badge.svelte";
   import Grid from "$lib/components/Grid.svelte";
   import SocialIcons from "$lib/components/SocialIcons.svelte";
-  import HeaderBanner from "$lib/components/HeaderBanner.svelte";
   import MailingListForm from "$lib/components/MailingListForm.svelte";
 
   import ArrowRightIcon from "$lib/icons/arrow-right.svg?raw";
@@ -129,59 +128,15 @@
   />
 {/if}
 
-<HeaderBanner />
-
 <main>
   <slot></slot>
 </main>
 
 <footer>
   <div class="container">
-    <Grid columns={4} wrapMode="single" alignItems="start" size="large">
-      <div class="footer-links">
-        <strong>Product</strong>
-        <a href="/openpilot">openpilot</a>
-        <a class="badged" href="/shop/comma-3x">
-          <span>comma 3X</span>
-          <Badge style="light" display="inline">new</Badge>
-        </a>
-        <a href="/shop/body">body</a>
-        <a href="/connect">connect</a>
-        <a href="/vehicles">Compatibility</a>
-        <a href="/shop">Shop</a>
-      </div>
-      <div class="footer-links">
-        <strong>Company</strong>
-        <a href="https://blog.comma.ai">Blog</a>
-        <a class="badged" href="/jobs.html">
-          <span>Jobs</span>
-          <Badge style="light" display="inline">we're hiring!</Badge>
-        </a>
-        <a class="badged" href="/leaderboard.html">
-          <span>Leaderboard</span>
-          <Badge style="accent" display="inline">New Challenge!</Badge>
-        </a>
-      </div>
-      <div class="footer-links">
-        <strong>Support</strong>
-        <a href="/support">Support & FAQs</a>
-        <a href="/setup">Setup Guides</a>
-        <a href="/shipping">Shipping & Returns</a>
-        <a class="badged" href="https://discord.comma.ai/">
-          <span>Discord</span>
-          {@html ExternalIcon}
-        </a>
-      </div>
-      <div class="footer-links">
-        <div class="tagline">{@html CommaIcon}<span>make driving chill</span></div>
-        <SocialIcons size="1.5rem" />
-        <div class="mailing-list">
-          <MailingListForm style="primary" />
-        </div>
-      </div>
-    </Grid>
     <div class="copyright">
       <span>© comma_ai 2025</span>
+      <SocialIcons size="1.4rem" />
       <a href="/terms">Terms & Privacy</a>
     </div>
   </div>
