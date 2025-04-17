@@ -287,7 +287,7 @@
   footer {
     color: #fff;
     background-color: #000;
-    padding: 6rem 6rem 1.25rem;
+    padding: 0rem 6rem 1.25rem;
 
     @media screen and (max-width: 1024px) {
       & {
