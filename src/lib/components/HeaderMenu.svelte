@@ -26,14 +26,11 @@
   >
     <div class="section-links">
       <a href="/openpilot">openpilot</a>
-      <a href="/shop/comma-3x">comma 3X</a>
+      <a href="/shop">catchcam</a>
       <a href="/shop">shop</a>
-      <a href="/connect">connect</a>
-      <a href="/vehicles">compatibility</a>
-      <a href="/setup">setup guides</a>
+      <a href="/setup">setup guide</a>
       <a href="/support">support & FAQs</a>
-      <a href="https://blog.comma.ai">blog</a>
-      <a href="/jobs.html">jobs - we're hiring!</a>
+      <a href="https://ivanvnucec.github.io/tags/#catchcam">blog</a>
     </div>
     <div class="news-feed">
       <div class="blog">
