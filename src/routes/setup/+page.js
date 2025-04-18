@@ -4,7 +4,6 @@ import { THREEX_PRICE, CAR_HARNESS_PRICE } from '$lib/constants/prices.js';
 
 export async function load() {
   return {
-    banner: { label: "Setup", link: "/setup" },
     product: 'comma 3X',
     title: 'Setup Guide',
     videoSrc: "https://www.youtube.com/embed/hrA3czvBo2w?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0",
