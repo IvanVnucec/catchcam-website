@@ -1,4 +1,5 @@
 <script>
+  import DiscordIcon from "$lib/icons/social/discord.svg?raw";
   import GithubIcon from "$lib/icons/social/github.svg?raw";
   import XIcon from "$lib/icons/social/x.svg?raw";
   import YoutubeIcon from "$lib/icons/social/youtube.svg?raw";
@@ -7,6 +8,9 @@
 </script>
 
 <div class="social-icons" style="--size: {size}">
+  <a href="https://discord.gg/Phw7f6Wu" target="_blank" class="discord">
+    {@html DiscordIcon}
+  </a>
   <a href="https://github.com/commaai" target="_blank" class="github">
     {@html GithubIcon}
   </a>
