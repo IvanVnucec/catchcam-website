@@ -22,8 +22,8 @@
 
 <section class="dark" id="hero">
   <div class="container">
-    <h1>comma 3X</h1>
-    <h2 class="muted">An AI upgrade for your car</h2>
+    <h1>catchcam</h1>
+    <h2 class="muted">Speed camera detector</h2>
     <Grid columns={2} rowGap="3rem">
       <img
         src={DeviceImage}
@@ -97,47 +97,10 @@
       100+ million miles driven and 10k users. Our GitHub repo has
       <a href="https://github.com/commaai/openpilot" target="_blank" class="highlight">{Math.floor(GitHubRepo["stargazers_count"] / 10000) * 10}k stars</a>.
     </h1>
-    <FeaturedArticles />
     <h1>
       Follow us on 𝕏
       <a href="https://twitter.com/comma_ai" target="_blank" class="highlight">@comma_ai</a>.
     </h1>
-  </div>
-</section>
-
-<section class="light" id="recruit">
-  <div class="container">
-    <SectionHeader leftLabel="Careers" rightLabel="We are hiring" />
-    <h1 class="mb-5 sm-mb-3">Join us in building the future.</h1>
-    <Grid columns={2} columnGap="6rem" size="large">
-      <Grid columns={2}>
-        <div class="recruiting-card">
-          <span class="muted">/01</span>
-          <span>product</span>
-        </div>
-        <div class="recruiting-card">
-          <span class="muted">/02</span>
-          <span>autonomy</span>
-        </div>
-        <div class="recruiting-card">
-          <span class="muted">/03</span>
-          <span>operations</span>
-        </div>
-      </Grid>
-      <div>
-        <h4>
-          We're looking for talented individuals, able to work independently,
-          and ready to make a meaningful impact.
-        </h4>
-        <LinkButton
-          href="https://comma.ai/jobs"
-          style="primary"
-          fullWidth={true}
-        >
-          See open positions
-        </LinkButton>
-      </div>
-    </Grid>
   </div>
 </section>
 
@@ -175,39 +138,6 @@
     @media screen and (max-width: 375px) {
       & .feature-item span {
         font-size: 0.75rem;
-      }
-    }
-  }
-  #recruit {
-    & .recruiting-card {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1.5rem;
-      border: 1px solid #000;
-
-      & span {
-        display: block;
-      }
-
-      & span:first-child {
-        font-family: JetBrains Mono, monospace;
-        font-size: 0.875rem;
-        font-weight: 400;
-        line-height: 1;
-        margin-bottom: 0.375rem;
-      }
-
-      & span:last-child {
-        font-size: 2rem;
-        font-weight: 600;
-        line-height: 1;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      & h4 {
-        margin-bottom: 2rem;
       }
     }
   }
