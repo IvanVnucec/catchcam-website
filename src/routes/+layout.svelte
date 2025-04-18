@@ -129,7 +129,7 @@
 <footer>
   <div class="container">
     <div class="copyright">
-      <span>© comma_ai 2025</span>
+      <span>© catchcam 2025</span>
       <SocialIcons size="1.4rem" />
       <a href="/terms">Terms & Privacy</a>
     </div>
