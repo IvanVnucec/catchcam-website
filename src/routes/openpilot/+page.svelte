@@ -201,9 +201,6 @@
         with the driver supervising.
       </p>
     </article>
-
-    <SectionHeader leftLabel="read what people say" rightIcon={XIcon} />
-    <FeaturedTweets />
   </div>
 </section>
 
