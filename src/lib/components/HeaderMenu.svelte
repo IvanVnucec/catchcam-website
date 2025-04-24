@@ -25,9 +25,8 @@
     tabindex="-1"
   >
     <div class="section-links">
-      <a href="/openpilot">openpilot</a>
-      <a href="/shop">catchcam</a>
-      <a href="/shop">shop</a>
+      <a href="/openpilot">catchcam</a>
+      <a href="/shop/comma-3x">shop</a>
       <a href="/setup">setup guide</a>
       <a href="/support">support & FAQs</a>
       <a href="https://ivanvnucec.github.io/tags/#catchcam">blog</a>
