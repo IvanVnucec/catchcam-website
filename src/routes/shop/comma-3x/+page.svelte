@@ -244,60 +244,6 @@
   </div>
 </section>
 
-<section class="light" id="fine-print">
-  <div class="container">
-    <Grid templateColumns="0.5fr 1.25fr">
-      <h2>Fine Print</h2>
-      <div class="fine-print-copy">
-          <strong>30-Day Return</strong>
-          <p>
-            If for any reason you are dissatisfied with anything purchased at the <a target="_blank" href="/" class="highlight">comma.ai</a> shop,
-            ship it back within 30 days for a full refund. <a target="_blank" href="https://shop.comma.ai/a/returns" class="highlight">comma.ai/returns</a>
-          </p>
-          <p>
-            If you intend to upstream support for a new car model, we may approve an extended return window.
-            Open a ticket request at <a target="_blank" href="https://shop.comma.ai/a/returns" class="highlight">comma.ai/support</a>.
-          </p>
-          <strong>Shipping</strong>
-          <p>
-            Free shipping via UPS (US only); signature confirmation required.
-            International shipping is a $30 flat rate; customs/duties/taxes are between you and your country.
-            Please see FAQ for more information.
-          </p>
-          <strong>Affirm</strong>
-          <p>
-            Your rate will be based on credit, and is subject to an eligibility check.
-            Payment options through Affirm are provided by these lending partners: <a href="http://affirm.com/lenders" target="_blank" class="highlight">affirm.com/lenders</a>.
-            Options depend on your purchase amount, and a down payment may be required.
-          </p>
-          <strong>Warranty</strong>
-          <p>
-            1-year limited warranty against hardware defects. Open and repair the comma 3X at your own risk.
-            comma is not responsible for damages that may occur while repairing devices. We cannot provide shipping return labels for international devices.
-            Any damage on arrival must be reported to comma support within 14 days of delivery.
-          </p>
-          <strong>Software</strong>
-          <p>
-            The comma 3X does not ship with software capable of controlling a car.
-            Open source software can be installed separately.
-          </p>
-          <strong>Windshield installation</strong>
-          <p>
-            Before using the device on your windshield, check the state and local laws and ordinances where you drive.
-            Some state laws prohibit or restrict the placement of objects on the windshield of a motor vehicle.
-            IT IS THE USER'S RESPONSIBILITY TO MOUNT THE DEVICE IN COMPLIANCE WITH ALL APPLICABLE LAWS AND ORDINANCES.
-            Always mount your device in a location that does not obstruct the driver's view of the road.
-            comma does not assume any responsibility for any fines, penalties, or damages that may be incurred as a result
-            of any state or local law or ordinance relating to the use of your comma device.
-          </p>
-      </div>
-    </Grid>
-    <Faq topic={faq.devices} title="comma 3X FAQ" />
-    <Space multiplier={3} />
-    <Faq topic={faq.trial} />
-  </div>
-</section>
-
 <style>
   h2 {
     font-size: 1.875rem;
@@ -457,21 +403,6 @@
 
     & a {
       color: white;
-    }
-  }
-
-  .fine-print-copy {
-    padding: 1.5rem;
-    background-color: #fafafa;
-
-    & strong, & p {
-      color: #545458;
-      font-size: 0.875rem;
-      line-height: 1.25;
-    }
-
-    & strong + p {
-      margin-top: 0.25rem;
     }
   }
 
