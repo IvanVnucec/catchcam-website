@@ -28,6 +28,18 @@
   import MemoryIcon from "$lib/icons/features/memory.svg?raw";
   import Space from "$lib/components/Space.svelte";
 
+  import DeviceVideoWebm from "$lib/videos/comma-3x.webm";
+  import DeviceVideoMp4 from "$lib/videos/comma-3x.mp4";
+  import Comma3XProductImage from "$lib/images/products/comma-3x/comma-3x-promo.jpg";
+  import OBDCCableImage from "$lib/images/products/obd-c-cable/obd-c-right-cable.jpg";
+  import ReplacementMountsImage from "$lib/images/products/replacement-mounts/replacement-mounts-3x.png";
+  import MoonIcon from "$lib/icons/features/moon.svg?raw";
+  import CableIcon from "$lib/icons/features/cable.svg?raw";
+  import SetupGuide from "$lib/components/SetupGuide.svelte";
+  import Comma3XImage from "$lib/images/device.png";
+  import CarBrandCollageImage from "$lib/images/car-brand-collage.jpg";
+  import Comma3XGlowImage from "$lib/images/device-glow.png";
+
   export let data;
 </script>
 
@@ -296,6 +308,232 @@
   </section>
 </div>
 
+<div id="shop">
+  <div class="hero">
+    <video autoplay muted loop webkit-playsinline playsinline disableRemotePlayback>
+      <source src={DeviceVideoWebm} type="video/webm" />
+      <source src={DeviceVideoMp4} type="video/mp4" />
+    </video>
+    <hgroup>
+      <h1>comma 3X</h1>
+      <h2>Make driving chill</h2>
+    </hgroup>
+  </div>
+  <slot />
+
+  <section class="light" id="description">
+    <div class="container">
+      <Grid rowGap="0" templateColumns="0.5fr 1.25fr">
+        <h2>Meet the comma 3X</h2>
+        <div class="description">
+          <p>
+            The comma 3X is custom hardware designed to live in your car, and purpose built to run openpilot. The comma 3X has three beautiful HDR cameras, two cameras to watch the road and one night-vision camera to see inside the car.
+          </p>
+          <p>
+            Besides cameras, the comma 3X has a suite of connectivity and sensors including cellular LTE, Wi-Fi, an IMU, high-precision GPS, and microphones.
+          </p>
+        </div>
+      </Grid>
+      <div class="mobile-hero">
+        <video autoplay muted loop webkit-playsinline playsinline disableRemotePlayback>
+          <source src={DeviceVideoWebm} type="video/webm" />
+          <source src={DeviceVideoMp4} type="video/mp4" />
+        </video>
+        <hgroup>
+          <h1>comma 3X</h1>
+          <h2>Make driving chill</h2>
+        </hgroup>
+      </div>
+      <hr />
+      <Grid rowGap="0" templateColumns="0.5fr 1.25fr">
+        <h2>In the Box</h2>
+        <div class="box-contents">
+          <div>
+            <img src={Comma3XProductImage} loading="lazy" alt="comma 3X device">
+            <p>comma 3X</p>
+          </div>
+          <div>
+            <img src={OBDCCableImage} loading="lazy" alt="1.5ft right-angle OBD-C cable">
+            <p>1.5 ft right-angle OBD-C cable</p>
+          </div>
+          <div>
+            <img src={ReplacementMountsImage} loading="lazy" alt="mount">
+            <p>2 standard mounts (some cars ship with 8 degree mounts. Details
+              <a
+                href="https://github.com/commaai/openpilot/blob/master/docs/CARS.md#supported-cars"
+                target="_blank" class="highlight">here</a
+              >.)
+            </p>
+          </div>
+        </div>
+      </Grid>
+      <hr />
+      <Grid rowGap="0" templateColumns="0.5fr 1.25fr">
+        <h2>On-device Storage</h2>
+        <div>
+          <p>comma 3X includes on-board storage to store your drives.</p>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html MemoryIcon}</div>
+              <span>Storage</span>
+            </div>
+            <div class="contents">
+              <hgroup>
+                <strong>128<span class="unit">GB</span></strong>
+                <span>built in storage</span>
+              </hgroup>
+              <div>~4.5 hours of footage</div>
+            </div>
+          </div>
+          <p>
+            Want your video footage saved for longer? – Sign up for <a href="/connect" class="highlight">comma prime</a> for 1 year of cloud video storage.
+          </p>
+          <p>
+            comma 3X includes one free month of comma prime.
+            To claim your free prime trial, log into <a href="https://connect.comma.ai/" target="_blank" class="highlight">comma connect</a>.
+            Once paired, you can see your recorded drives, SSH into your device from anywhere, and more.
+          </p>
+        </div>
+      </Grid>
+      <hr />
+      <Grid rowGap="0" templateColumns="0.5fr 1.25fr">
+        <h2>Tech Specs</h2>
+        <div>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html ThreeSixtyVisionIcon}</div>
+              <span>Cameras</span>
+            </div>
+            <div class="contents">
+              Three 1080p cameras w/ 140 dB of dynamic range: dual-cam 360° vision and a narrow cam to see far-away objects
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html ProcessorIcon}</div>
+              <span>Processor</span>
+            </div>
+            <div class="contents">
+              Qualcomm Snapdragon 845
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html MemoryIcon}</div>
+              <span>Can FD Enabled</span>
+            </div>
+            <div class="contents">
+              Supports CAN FD vehicles without extra hardware
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html MemoryIcon}</div>
+              <span>Storage</span>
+            </div>
+            <div class="contents">
+              128GB built in storage
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html ConnectivityIcon}</div>
+              <span>Connectivity</span>
+            </div>
+            <div class="contents">
+              <ul>
+                <li>LTE</li>
+                <li>Wi-Fi</li>
+                <li>High-Precision GPS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html MoonIcon}</div>
+              <span>Night-Vision</span>
+            </div>
+            <div class="contents">
+              IR LEDs for interior night-vision monitoring
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html DisplayIcon}</div>
+              <span>Display</span>
+            </div>
+            <div class="contents">
+              2160x1080 Beautiful OLED display
+            </div>
+          </div>
+          <div class="spec-card">
+            <div class="header">
+              <div>{@html CableIcon}</div>
+              <span>Ports</span>
+            </div>
+            <div class="contents">
+              <ul>
+                <li>OBD-C port (USB-C w/ CAN)</li>
+                <li>USB 3.1 Gen 2 port</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </Grid>
+      <hr />
+      <SetupGuide
+        productName="comma 3X"
+        title="Setup Guide"
+        stepCount={7}
+        estimatedMinutes={15}
+        link="/setup"
+        image={Comma3XImage}
+      />
+    </div>
+  </section>
+
+  <section class="dark" id="compatibility">
+    <div class="container">
+      <div class="compatibility">
+        <Grid>
+          <div>
+            <hgroup>
+              <span>Car harness</span>
+              <h2>comma 3X is compatible with {vehicleCountText} cars</h2>
+            </hgroup>
+            <p>
+              A supported vehicle is one that just works when you install a comma device.
+              All supported cars provide a better experience than any stock system.
+            </p>
+            <LinkButton href="/vehicles" style="secondary" fullWidth={false}>View all {vehicleCountText} cars</LinkButton>
+          </div>
+          <img src={CarBrandCollageImage} loading="lazy" alt="collage of some supported car brands" />
+        </Grid>
+      </div>
+      <div class="compatibility">
+        <Grid>
+          <img src={Comma3XGlowImage} loading="lazy" alt="comma 3X device" />
+          <div>
+            <hgroup>
+              <span>Software</span>
+              <h2>Works with openpilot</h2>
+            </hgroup>
+            <p>
+              comma 3X ships without software installed, so you need to install software.
+              It is compatible with <a href="/openpilot" class="highlight">openpilot</a> and works with a wide variety of community supported forks.
+            </p>
+            <LinkButton href="/openpilot" style="secondary" fullWidth={false}>Openpilot</LinkButton>
+          </div>
+        </Grid>
+      </div>
+      <h2 class="guarantee">
+        Try our 30-day money-back trial and see why 92% of buyers keep their comma 3X and why Consumer Reports rated us as the
+        <a href="https://data.consumerreports.org/wp-content/uploads/2020/11/consumer-reports-active-driving-assistance-systems-november-16-2020.pdf" class="highlight">top ADAS system.</a>
+      </h2>
+    </div>
+  </section>
+</div>
+
 <style>
   #hero {
     & .feature-item {
@@ -475,6 +713,261 @@
 
     & .release-notes {
       width: 80%;
+    }
+  }
+
+  #shop {
+    & h2 {
+      font-size: 1.875rem;
+      font-weight: 600;
+    }
+
+    & p {
+      font-size: 1.25rem;
+    }
+
+    & hr {
+      margin: 3rem 0;
+    }
+
+    & #description {
+      & .description {
+        & p:first-of-type {
+          margin-top: 0;
+        }
+
+        & p:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        & {
+          margin-bottom: 3rem;
+        }
+      }
+
+      & .box-contents {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        & > div {
+          width: 300px;
+          margin-bottom: 2rem;
+
+          & img {
+            max-height: 150px;
+          }
+
+          & p {
+            margin: 0 2rem;
+          }
+        }
+      }
+
+      & .spec-card {
+        border: 1px solid #000;
+        margin-bottom: 1.5rem;
+
+        & .header {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #000;
+
+          & div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+            width: 48px;
+            height: 48px;
+
+            & svg {
+              width: 36px;
+              height: 36px;
+              color: white;
+            }
+          }
+
+          & span {
+            font-family: JetBrains Mono, monospace;
+            font-size: 0.875rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-left: 1rem;
+          }
+        }
+
+        & .contents {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0.875rem 1rem;
+
+          & hgroup {
+            & strong {
+              display: block;
+              font-size: 1.25rem;
+              font-weight: 600;
+            }
+
+            & .unit {
+              font-size: 0.875rem;
+              text-transform: uppercase;
+            }
+          }
+
+          & li {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    & hgroup {
+      & span {
+        font-family: JetBrains Mono, monospace;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      & h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+    }
+
+    & .compatibility {
+      margin-bottom: 5rem;
+
+      @media screen and (max-width: 768px) {
+        & {
+          margin-bottom: 5rem;
+        }
+      }
+
+      & hgroup {
+        & h2 {
+          text-wrap: balance;
+        }
+
+        & span {
+          text-transform: uppercase;
+        }
+      }
+
+      & p, & p > a {
+        color: white;
+      }
+    }
+
+    & .guarantee {
+      font-size: 3rem;
+      line-height: 1.25;
+
+      & a {
+        color: white;
+      }
+    }
+
+    & .mobile-hero {
+      display: none;
+      position: relative;
+      color: white;
+
+      & hgroup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        & h1 {
+          color: white;
+          text-transform: uppercase;
+          font-family:
+            Monument Extended Black,
+            sans-serif;
+          margin-bottom: 1rem;
+        }
+
+        & h2 {
+          color: white;
+          font-family: JetBrains Mono, monospace;
+          font-weight: 400;
+          font-size: 1rem;
+        }
+      }
+
+      & video {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        margin: 2rem 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      & .mobile-hero {
+        display: block;
+      }
+
+      & .guarantee {
+        font-size: 2rem;
+      }
+    }
+
+    & .hero {
+      position: relative;
+      color: white;
+
+      & hgroup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        & h1 {
+          text-transform: uppercase;
+          font-family:
+            Monument Extended Black,
+            sans-serif;
+          margin-bottom: 1rem;
+        }
+
+        & h2 {
+          font-family: JetBrains Mono, monospace;
+          font-size: 2rem;
+        }
+      }
+
+      & video {
+        width: 100%;
+        height: 45vh;
+        object-fit: cover;
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      & video {
+        height: 40vh;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      & .hero {
+        display: none;
+      }
     }
   }
 </style>
